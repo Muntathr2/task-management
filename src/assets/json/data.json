@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "titleProject": "Project 1",
+        "description": "This is the description of project one.",
+        "startDate": "2020-05-31T16:48:57.902Z",
+        "phases": [
+            {
+                "id": 2,
+                "title": "Front End",
+                "endDate": null,
+                "tasks_open": [
+                    {
+                        "id": 3,
+                        "name": "Make UI Home Use Vue",
+                        "status": "open",
+                        "color": "#2196F3"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Make UI About Use Vue",
+                        "status": "open",
+                        "color": "#F44336"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Make UI Contact Use Vue",
+                        "status": "open",
+                        "color": "#795548"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Make UI Profile Use Vue",
+                        "status": "open",
+                        "color": "#E91E63"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Make Conection use Axios",
+                        "status": "open",
+                        "color": "#3F51B5"
+                    }
+                ],
+                "tasks_progress": [
+                    {
+                        "id": 4,
+                        "name": "Make UI About Use Vue",
+                        "status": "open",
+                        "color": "#F44336"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Make UI Contact Use Vue",
+                        "status": "open",
+                        "color": "#795548"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Make UI Profile Use Vue",
+                        "status": "open",
+                        "color": "#E91E63"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Make Conection use Axios",
+                        "status": "open",
+                        "color": "#3F51B5"
+                    }
+                ],
+                "tasks_complete": [
+                    {
+                        "id": 4,
+                        "name": "Make UI About Use Vue",
+                        "status": "open",
+                        "color": "#F44336"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Make UI Contact Use Vue",
+                        "status": "open",
+                        "color": "#795548"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Make UI Profile Use Vue",
+                        "status": "open",
+                        "color": "#E91E63"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Make Conection use Axios",
+                        "status": "open",
+                        "color": "#3F51B5"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "title": "Back End",
+                "endDate": null,
+                "tasks": [
+                    {
+                        "id": 10,
+                        "name": "Task 1",
+                        "status": "open",
+                        "color": "#F44336"
+                    },
+                    {
+                        "id": 11,
+                        "name": "Task 2",
+                        "status": "open",
+                        "color": "#2196F3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "titleProject": "Project 2",
+        "phases": [
+            {
+                "id": 13,
+                "title": "UI/UX",
+                "color": "#2196F3"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "titleProject": "Project 3",
+        "phases": []
+    }
+]
