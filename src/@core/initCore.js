@@ -9,7 +9,7 @@ const _syncAppRtl = () => {
   const storedLang = cookieRef('language', null)
   const { locale } = useI18n({ useScope: 'global' })
 
-  // TODO: Handle case where i18n can't read persisted value
+  //   Handle case where i18n can't read persisted value
   if (locale.value !== storedLang.value && storedLang.value)
     locale.value = storedLang.value
 

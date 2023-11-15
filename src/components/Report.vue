@@ -87,7 +87,7 @@ import { useTaskStore } from '../store/todos'
 const data = ref(null)
 
 
-//TODO: On Click Nav in Slidbar Save index and get it
+//  On Click Nav in Slidbar Save index and get it
 onMounted(() => {
   const unwatch = watch(() => useTaskStore().getDataPrint, newValue => {
     data.value = newValue

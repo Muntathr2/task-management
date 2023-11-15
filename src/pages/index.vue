@@ -16,14 +16,14 @@ import { useTaskStore } from '../store/todos'
 const authThemeImg = useGenerateImageVariant(authV2LoginIllustrationLight, authV2LoginIllustrationDark, authV2LoginIllustrationBorderedLight, authV2LoginIllustrationBorderedDark, true)
 const projects = useTaskStore().getProjects
 
-//TODO: State save info Data
+//  State save info Data
 const phaseName = ref('')
 const phesesData = ref()
 const taskName = ref('')
 const index = ref(useTaskStore.index)
 const indexPhese = ref(-1)
 
-//TODO: Push data in Pheses
+//  Push data in Pheses
 const addPhase = () => {
   let data ={
     name: phaseName.value,
@@ -35,7 +35,7 @@ const addPhase = () => {
   }
 }
 
-//TODO: Push data Tasks in state
+//  Push data Tasks in state
 const addTask = phaseIndex => {
   let data = {
     name: taskName.value,
@@ -48,18 +48,18 @@ const addTask = phaseIndex => {
 }
 
 
-//TODO: Update Status data in Task
+//  Update Status data in Task
 const updateTaskStatus = (taskIndex, newStatus) => {
   useTaskStore().updateTaskStatus(index.value, indexPhese.value, taskIndex, newStatus)
 }
 
-//TODO: Save index Phases
+//  Save index Phases
 const selectPhase = phaseIndex => {
   indexPhese.value = phaseIndex
   console.log(phaseIndex)
 }
 
-//TODO: Save Data Print
+//  Save Data Print
 const addDataPrint = data => {
   console.log(data)
   if (data) {
@@ -67,7 +67,7 @@ const addDataPrint = data => {
   }
 }
 
-//TODO:  Function Print tasks
+//   Function Print tasks
 import html2pdf from "html2pdf.js"
 
 const download = data => {
@@ -90,7 +90,7 @@ const download = data => {
   html2pdf().set(options).from(element).save()
 }
 
-//TODO: On Click Nav in Slidbar Save index and get it
+//  On Click Nav in Slidbar Save index and get it
 onMounted(() => {
   const unwatch = watch(() => useTaskStore().getIndex, newValue => {
     index.value = newValue

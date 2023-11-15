@@ -35,7 +35,7 @@ const props = defineProps({
   },
 })
 
-//TODO: Push data Project to state
+//  Push data Project to state
 const projectName = ref('')
 
 const addProject = () => {
@@ -50,7 +50,7 @@ const addProject = () => {
 }
 
 
-//TODO: Push index Project to state
+//  Push index Project to state
 const selectProject = projectIndex => {
   useTaskStore().addIndex(projectIndex)
 }
