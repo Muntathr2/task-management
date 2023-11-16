@@ -170,3 +170,20 @@
   -webkit-mask-image: none !important;
   mask-image: none !important;
 }
+
+.snackbars-item{
+  block-size: 0 !important;
+  inline-size: 0 !important;
+}
+
+.snackbars-data{
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+  inline-size: 400px !important;
+  inline-size: 100%;
+  
+  p{
+    margin-block-start: 12px;
+  }
+}

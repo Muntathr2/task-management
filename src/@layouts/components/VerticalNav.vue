@@ -49,7 +49,6 @@ const addProject = () => {
   }
 }
 
-
 //  Push index Project to state
 const selectProject = projectIndex => {
   useTaskStore().addIndex(projectIndex)
@@ -159,6 +158,7 @@ const hideTitleAndIcon = configStore.isVerticalNavMini(isHovered)
             <VerticalNavLink 
               :key="index"
               :item="item"
+              :index="index"
               class-name="router-link-exact-active"
             />
           </div>

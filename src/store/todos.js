@@ -17,6 +17,11 @@ export const useTaskStore = defineStore('task', {
       this.projects.push(project)
     },
 
+    // Function to delete a project
+    deleteProject(projectIndex) {
+      this.projects.splice(projectIndex, 1)
+    },
+
     //  Function Add Pheses in Project State
     addPhase(projectIndex, phase) {
       this.projects[projectIndex].phases.push(phase)

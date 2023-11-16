@@ -1,4 +1,5 @@
 <script setup>
+import { useTaskStore } from '@/store/todos'
 import { layoutConfig } from '@layouts'
 import { can } from '@layouts/plugins/casl'
 import { useLayoutConfigStore } from '@layouts/stores/config'
@@ -12,10 +13,19 @@ const props = defineProps({
     type: null,
     required: true,
   },
+  index: {
+    type: Number,
+    required: true,
+  },
 })
 
 const configStore = useLayoutConfigStore()
 const hideTitleAndBadge = configStore.isVerticalNavMini()
+
+//  delete a Project from state
+const deleteProject = index => {
+  useTaskStore().deleteProject(index)
+}
 </script>
 
 <template>
@@ -58,6 +68,12 @@ const hideTitleAndBadge = configStore.isVerticalNavMini()
         >
           {{ item.badgeContent }}
         </Component>
+        <button @click="deleteProject(index)">
+          <VIcon
+            size="20"
+            icon="tabler-trash-filled"
+          />
+        </button>
       </TransitionGroup>
     </Component>
   </li>
