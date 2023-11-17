@@ -1,0 +1,10 @@
+{
+    "languages": {
+        "en": "English",
+        "ar": "Arabic"
+    },
+    "data": {
+        "title_no_data": "No Data ⚠️",
+        "des_no_data": "Let's Create a new project and organize your tasks."
+    }
+}

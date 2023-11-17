@@ -15,6 +15,9 @@ initCore()
 initConfigStore()
 
 const configStore = useConfigStore()
+const lang = localStorage.getItem('lang')
+
+configStore.isAppRTL = lang == 'ar' ? true : false
 </script>
 
 <template>

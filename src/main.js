@@ -1,7 +1,8 @@
 import App from '@/App.vue'
-import { createPinia } from 'pinia'
 import { registerPlugins } from '@core/utils/plugins'
+import { createPinia } from 'pinia'
 import { createApp } from 'vue'
+import i18n from './i18n.js'
 
 // Styles
 import '@core/scss/template/index.scss'
@@ -13,7 +14,7 @@ const pinia = createPinia()
 
 // Register plugins
 registerPlugins(app)
-
+app.use(i18n())
 app.use(pinia)
 
 // Mount vue app

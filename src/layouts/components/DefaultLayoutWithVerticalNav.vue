@@ -12,6 +12,7 @@ const project = useTaskStore().getProjects
 
 
 // @layouts plugin
+import SwichLanguage from '@/layouts/components/SwichLanguage.vue'
 import { VerticalNavLayout } from '@layouts'
 
 // SECTION: Loading Indicator
@@ -47,6 +48,8 @@ watch([
         </IconBtn>
 
         <NavbarThemeSwitcher />
+
+        <SwichLanguage />
 
         <VSpacer />
 

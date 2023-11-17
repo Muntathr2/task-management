@@ -289,8 +289,8 @@ onMounted(() => {
       />
     </div>
     <ErrorHeader
-      title="No Data ⚠️"
-      description="Let's Create a new project and organize your tasks."
+      :title="$t('data.title_no_data')"
+      :description="$t('data.des_no_data')"
     />
   </div>
 </template>
