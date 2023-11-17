@@ -43,13 +43,13 @@ export async function loadLocaleMessages(locale) {
 
 export default function setupI18n() {
   if(!i18n) {
-    let locale = localStorage.getItem('lang') || 'ar'
+    let locale = localStorage.getItem('lang') || 'en'
 
     i18n = createI18n({
       globalInjection: true,
       legacy: false,
       locale: locale,
-      fallbackLocale: 'pt',
+      fallbackLocale: 'en',
     })
 
     setI18nLanguage(locale)

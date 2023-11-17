@@ -108,14 +108,14 @@ onMounted(() => {
   <!-- CARD PHESES AND ADD NEW PHESES -->
   <CardStatisticsVertical
     v-if="index >=0"
-    title="Pheses"
+    :title="$t('Pheses.title')"
   >
     <div class="header-pheses">
       <div class="add-phese">
         <input
           v-model="phaseName"
           class="input-add"
-          placeholder="Write Name Phese"
+          :placeholder="$t('Pheses.input_text')"
         >
         <button
           class="btn-add-2"
@@ -158,7 +158,7 @@ onMounted(() => {
             <div class="ma-2">
               <VCard
                 class="mb-6 text-center"
-                title="OPEN 🚀"
+                :title="$t('Tasks.open')"
                 color="#192a5655"
               />
               <div
@@ -188,13 +188,13 @@ onMounted(() => {
                 <input
                   v-model="taskName"
                   class="input-add-task"
-                  placeholder="Write Task"
+                  :placeholder="$t('Tasks.input_text')"
                 >
                 <button
                   class="btn-add-task"
                   @click="addTask(phaseIndex)"
                 >
-                  Add New Task
+                  {{ $t('Tasks.btn_text') }}
                 </button>
               </div>
             </div>
@@ -207,7 +207,7 @@ onMounted(() => {
             <div class="ma-2">
               <VCard
                 class="mb-6 text-center"
-                title="IN PROGRESS 🚀"
+                :title="$t('Tasks.in_progress')"
                 color="#f39c1255"
               />
               <div
@@ -243,7 +243,7 @@ onMounted(() => {
             <div class="ma-2">
               <VCard
                 class="mb-6 text-center"
-                title="COMPLETE 🚀"
+                :title="$t('Tasks.complete')"
                 color="#27ae6055"
               />
               <div

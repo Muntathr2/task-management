@@ -2,7 +2,7 @@ import App from '@/App.vue'
 import { registerPlugins } from '@core/utils/plugins'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
-import i18n from './i18n.js'
+import i18n from './i18n'
 
 // Styles
 import '@core/scss/template/index.scss'

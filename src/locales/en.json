@@ -6,5 +6,24 @@
     "data": {
         "title_no_data": "No Data ⚠️",
         "des_no_data": "Let's Create a new project and organize your tasks."
+    },
+    "Slidbar": {
+        "input_text": "Write Name Project",
+        "btn_text": "Add New Project"
+    },
+    "Pheses": {
+        "title": "Pheses",
+        "input_text": "Write Name Pheses"
+    },
+    "Tasks": {
+        "open": "OPEN 🚀",
+        "in_progress": "IN PROGRESS 🚀",
+        "complete": "COMPLETE 🚀",
+        "input_text": "Write Name Task",
+        "btn_text": "Add New Task"
+    },
+    "Copy":{
+        "made_with": " Made With",
+        "by": "by"
     }
 }

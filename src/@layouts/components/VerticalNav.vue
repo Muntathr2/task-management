@@ -178,13 +178,13 @@ const hideTitleAndIcon = configStore.isVerticalNavMini(isHovered)
         <input
           v-model="projectName"
           class="input-add"
-          placeholder="Write Name Project"
+          :placeholder="$t('Slidbar.input_text')" 
         >
         <button
           class="btn-add"
           @click="addProject"
         >
-          Add New Task
+          {{ $t('Slidbar.input_text') }}
         </button>
       </div>
     </slot>

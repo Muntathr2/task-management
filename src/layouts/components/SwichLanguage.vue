@@ -1,18 +1,15 @@
 <script setup>
-import { watch } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { VList, VListItem, VMenu } from 'vuetify/lib/components/index.mjs'
-import { setI18nLanguage, SUPPORT_LOCALES as supportLocales } from '../../i18n'
+import { VIcon, VList, VListItem, VMenu } from 'vuetify/lib/components/index.mjs'
+import { SUPPORT_LOCALES as supportLocales } from '../../i18n'
 
-const { locale } = useI18n({ useScope: 'global' })
+const getLang = localStorage.getItem('lang')
 
-watch(locale, val => {
-  if(val.length <= 1){
-    setI18nLanguage(val[0])
-    console.log(val[0])
+const changeLang = lang => {
+  if(getLang !== lang){
+    localStorage.setItem('lang', lang)
     window.location.reload()
   }
-})
+}
 </script>
 
 <template>
@@ -28,14 +25,15 @@ watch(locale, val => {
       activator="parent"
       offset="14px"
     >
-      <VList v-model:selected="locale">
+      <VList>
         <VListItem
           v-for="item in supportLocales"
           :key="item.name"
           :value="item.name"
           :prepend-icon="item.icon"
           color="primary"
-          class="text-capitalize"
+          :class="getLang === item.name ? 'text-capitalize v-list-item--active' : 'text-capitalize' "
+          @click="changeLang(item.name)"
         >
           {{ item.title }}
         </VListItem>

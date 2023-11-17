@@ -4,14 +4,14 @@
     <span class="d-flex align-center">
       &copy;
       {{ new Date().getFullYear() }}
-      Made With
+      {{ $t('Copy.made_with') }}
       <VIcon
         icon="tabler-heart"
         color="error"
         size="1.25rem"
         class="mx-1"
       />
-      By <a
+      {{ $t('Copy.by') }} <a
         href="https://pixinvent.com"
         target="_blank"
         rel="noopener noreferrer"
